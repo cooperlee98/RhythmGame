@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
+  m_MinSize: {x: 880, y: 492}
+  m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 105
+  controlID: 88
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 106
+  controlID: 89
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 41
+  controlID: 90
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,7 +221,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -422,9 +422,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 60fbffff
+      m_SelectedIDs: 7ed3ffff4cd2ffff20d2fffff2d1ffff
+      m_LastClickedID: -11790
+      m_ExpandedIDs: 6efaffffc4faffff60fbffff063c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -484,9 +484,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.2109658, y: 2.4266992, z: -9.537545}
+    m_Target: {x: 0.24823192, y: 1.671809, z: -10.123667}
     speed: 2
-    m_Value: {x: -0.2109658, y: 2.4266992, z: -9.537545}
+    m_Value: {x: 0.24823192, y: 1.671809, z: -10.123667}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -536,9 +536,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 16.81071
+    m_Target: 14.555576
     speed: 2
-    m_Value: 16.81071
+    m_Value: 14.555576
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -584,23 +584,40 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 232
+    x: 256
     y: 73
-    width: 794
-    height: 642
+    width: 771
+    height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: 7259655472377693719, guid: f49805cdcc3f4b748ba8b2d904c5643e, type: 2}
+    - {fileID: 4276255530806203190, guid: 5dec1db578dad60418ac54ad0a4692ef, type: 2}
+    - {fileID: -1079497092189253670, guid: 1d37db9e6e986de49bde9019e26ed470, type: 2}
     m_ValueSerializationHelper:
     - e00: 1
       e01: 0
       e02: 0
-      e03: 0
+      e03: -17
       e10: 0
       e11: 1
       e12: 0
-      e13: 0
+      e13: 108
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.9023371
+      e01: 0
+      e02: 0
+      e03: -29.140747
+      e10: 0
+      e11: 0.9023371
+      e12: 0
+      e13: 247.76825
       e20: 0
       e21: 0
       e22: 1
@@ -610,10 +627,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: f49805cdcc3f4b748ba8b2d904c5643e,
+  m_AnimatorController: {fileID: 9100000, guid: 5dec1db578dad60418ac54ad0a4692ef,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 7259655472377693719, guid: f49805cdcc3f4b748ba8b2d904c5643e,
+  - m_Target: {fileID: 4276255530806203190, guid: 5dec1db578dad60418ac54ad0a4692ef,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -674,14 +691,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 232
+    x: 256
     y: 73
-    width: 861
-    height: 642
+    width: 771
+    height: 665
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -3356
+  m_LastSelectedObjectID: -4902
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -721,19 +738,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\rhythmgame_github\RhythmGame\2d_rhythmgame_by2d
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fc3c0000
-    m_LastClickedID: 15612
+    m_SelectedIDs: f23c0000
+    m_LastClickedID: 15602
     m_ExpandedIDs: 00000000f23c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -806,7 +823,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
