@@ -16,7 +16,10 @@ public class NoteBehavior : MonoBehaviour
         else if (noteType == 4) keyCode = KeyCode.K;
     }
 
-    // Update is called once per frame
+    public void Initialize()//노트가 처음 만들어졌는데(오브젝트 풀링) 판정값이 다 미스가 되지 않도록 초기화!
+    {
+        judge = GameManager.judges.NONE;
+    }
     void Update()
     {
         transform.Translate(Vector3.down * GameManager.instance.noteSpeed);
@@ -24,7 +27,8 @@ public class NoteBehavior : MonoBehaviour
         if (Input.GetKey(keyCode))//사용자가 노트키를 입력하면 해당 노트에 대한 판정 진행
         {
             Debug.Log(judge);
-            if (judge != GameManager.judges.NONE) Destroy(gameObject);//노트가 판정 선에 닿기 시작한 이후엔 해당노트 제거
+            //if (judge != GameManager.judges.NONE) Destroy(gameObject);//노트가 판정 선에 닿기 시작한 이후엔 해당노트 제거
+            if (judge != GameManager.judges.NONE) gameObject.SetActive(false);//오브젝트 풀링에서 비활성화! 위 코드는 이제 사용x
         }
 
         
@@ -47,6 +51,8 @@ public class NoteBehavior : MonoBehaviour
         else if (other.gameObject.tag == "Miss Line")
         {
             judge = GameManager.judges.MISS;
+            //원래 이 다음줄에 destroy가 있었나?
+            gameObject.SetActive(false);//오브젝트 풀링, 비활성화
         }
     }
 }
