@@ -640,6 +640,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteSpeed: 0.05
+  scoreUI: {fileID: 1437848719}
+  comboUI: {fileID: 516822692}
+  judgeUI: {fileID: 652983631}
+  trails:
+  - {fileID: 1736480174}
+  - {fileID: 353427178}
+  - {fileID: 213545993}
+  - {fileID: 1244346897}
 --- !u!4 &323046716
 Transform:
   m_ObjectHideFlags: 0
@@ -652,7 +660,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &353427178
 GameObject:
@@ -886,7 +894,7 @@ Transform:
   - {fileID: 213545994}
   - {fileID: 1244346898}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &467752826
 GameObject:

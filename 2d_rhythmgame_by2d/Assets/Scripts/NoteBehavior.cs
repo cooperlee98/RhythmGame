@@ -26,6 +26,7 @@ public class NoteBehavior : MonoBehaviour
 
         if (Input.GetKey(keyCode))//사용자가 노트키를 입력하면 해당 노트에 대한 판정 진행
         {
+            GameManager.instance.processJudge(judge, noteType);
             Debug.Log(judge);
             //if (judge != GameManager.judges.NONE) Destroy(gameObject);//노트가 판정 선에 닿기 시작한 이후엔 해당노트 제거
             if (judge != GameManager.judges.NONE) gameObject.SetActive(false);//오브젝트 풀링에서 비활성화! 위 코드는 이제 사용x
@@ -51,6 +52,7 @@ public class NoteBehavior : MonoBehaviour
         else if (other.gameObject.tag == "Miss Line")
         {
             judge = GameManager.judges.MISS;
+            GameManager.instance.processJudge(judge, noteType);//노트가 미스가 되었을 때 콤보가 끊이기 위해 다시 한번 더 넣어줌
             //원래 이 다음줄에 destroy가 있었나?
             gameObject.SetActive(false);//오브젝트 풀링, 비활성화
         }
