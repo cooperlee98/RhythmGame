@@ -42,9 +42,22 @@ public class GameManager : MonoBehaviour
     public GameObject[] trails;
     private SpriteRenderer[] trailSpriteRenderers;
 
+    //음악 변수
+    private AudioSource audioSource;
+    public string music = "1";
+
+    //음악을 실행하는 함수
+    void MusicStart()
+    {
+        AudioClip audioClip = Resources.Load<AudioClip>("Beats/" + music);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = audioClip;
+        audioSource.Play();
+    }
 
     void Start()
     {
+        Invoke("MusicStart", 2);//게임 실행 이후 2초 뒤에 음악이 나옴
         judgementSpriteRenderer = judgeUI.GetComponent<Image>();
         judgementSpriteAnimator = judgeUI.GetComponent<Animator>();
         scoreText = scoreUI.GetComponent<Text>();
