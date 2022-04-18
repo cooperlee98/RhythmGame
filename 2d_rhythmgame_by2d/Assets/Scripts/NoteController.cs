@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NoteController : MonoBehaviour
 {
@@ -89,9 +90,24 @@ public class NoteController : MonoBehaviour
         {
             StartCoroutine(AwaitMakeNote(notes[i]));
         }
+        StartCoroutine(AwaitGameResult(notes[notes.Count - 1].order));//마지막 노트를 기준으로 게임 종료 함수를 불러옴
 
     }
 
+    IEnumerator AwaitGameResult(int order)
+    {
+        yield return new WaitForSeconds(startingPoint + order * beatInterval+8.0f);// 마지막 노트로부터 8초 뒤까지 기다림
+        GameResult();
+    }
+
+    void GameResult()
+    {
+        PlayerInformation.maxCombo = GameManager.instance.maxCombo;
+        PlayerInformation.score = GameManager.instance.score;
+        PlayerInformation.musicTitle=musicTitle;
+        PlayerInformation.musicArtist=musicArtist;
+        SceneManager.LoadScene("GameResultScene");
+    }
  
     void Update()
     {
